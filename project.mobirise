@@ -1,0 +1,252 @@
+{
+  "settings": {
+    "name": "My Site",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "styling": {
+        "primaryColor": "#2b7a69",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffffff",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": "1.4",
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#ffa25b",
+        "#2b7a69",
+        "#164fd3",
+        "#ff7d19",
+        "#385493",
+        "#086784",
+        "#fe8d01"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.8.25",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 58,
+    "versionPublish": "5.9.17",
+    "imageResize": true,
+    "chatbutton": {},
+    "favicon": false,
+    "mbrsiteDomain": "ktjot1jvkl",
+    "usedWebp": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "screenshot": "screenshot.png",
+    "publishChangesOnly": true
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "jinricp | 韩国BJ | 韩国女主播 | pandatv | 진리컴퍼니 | jinri company",
+        "meta_descr": "jinricp | 韩国BJ | 韩国女主播 | pandatv | 진리컴퍼니 | jinri company\n【韩宝贝公司开业邀请十几名极品白嫩巨乳网红 现场直播跳裸舞抖奶互动！你们韩国财阀都吃这么好的吗？】 韩国韩宝贝公司开业邀请十几名韩国极品白嫩巨乳网红主播热舞，开始还是性暗示动作，后面直接开始裸半身露奶狂抖！不羡鸳鸯不羡仙，只羡财阀每一天！",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            ".image-wrapper": {
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              }
+            },
+            ".text-wrapper": {
+              "@media (min-width: 992px)": {
+                "padding": "0 2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323"
+            }
+          },
+          "_name": "header01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"8\">\n\t\t<input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-12 col-lg-{{imageWidth}} image-wrapper\">\n\t\t\t\t<img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/68747470733a2f2f777372762e6e6c2f3f75726c3d68747470733a2f2f696d672e6a6a6a2e6761792f66696c652f3063616161383963653232633865666430323837312e6a7067-1468x827.jpeg\" alt=\"Mobirise Website Builder\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg col-md-12\">\n\t\t\t\t<div class=\"text-wrapper align-left\">\n\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>韩国BJ | 韩国女主播 | pandatv | 진리컴퍼니 | jinricp | jinri company</b></h1>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t【韩宝贝公司开业邀请十几名极品白嫩巨乳网红 现场直播跳裸舞抖奶互动！你们韩国财阀都吃这么好的吗？】&nbsp;</p>\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://github.com/niucnet/jinri-cp\" data-app-placeholder=\"Type Text\" target=\"_blank\">Get started</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "u8M7G6JvGQ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header01-1k"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>韩国BJ | 韩国女主播 | pandatv | 진리컴퍼니 | jinricp</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>第一季无水印全集加中文字幕下载：</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">网盘下载：<a href=\"https://mypikpak.com/s/VNskJXtVBtBGgsmsR4hhV_nOo1\" class=\"text-primary\" target=\"_blank\">https://mypikpak.com/s/VNskJXtVBtBGgsmsR4hhV_nOo1</a>\n<br>提取码：<b>nwy3</b></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>第一季全集ED2K链接：</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  全部ED2K链接：<a href=\"https://jinricp.neocities.org/\" class=\"text-primary\" target=\"_blank\">https://jinricp.neocities.org/</a>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>第一季全集在线播放：</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  <a href=\"https://video.eyny.com/playlist?list=PLf0VOMdxUZ\" class=\"text-primary\" target=\"_blank\">https://video.eyny.com/playlist?list=PLf0VOMdxUZ</a>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月25日【jinricp】韩国BJ脱衣热舞直播秀！第一季完结撒花！最终排名赛15小时合集【53GB/5V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240325-001.mp4|11116067106|D8573FDB67E0ADCFAA47884874EDF7BC|/\n<br>ed2k://|file|【jinricp】20240325-002.mp4|11557307237|6851C1D9EFCE0AE3649B2E18EF389BC7|/\n<br>ed2k://|file|【jinricp】20240325-003.mp4|11400142982|5B99807B7C2D2C81E431A061360BF3E0|/\n<br>ed2k://|file|【jinricp】20240325-004.mp4|11228102411|9FA3ADEBD4311FDFAA8E0B4C56B6BB18|/\n<br>ed2k://|file|【jinricp】20240325-005.mp4|12005031526|4F6DB6312C0BFB4A29490D88949A5BF3|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月24日【jinricp】韩国BJ脱衣热舞直播秀！最终排名赛前夕之奢侈品礼物争夺战8小时合集【27GB/3V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240324-001.mp4|11290409306|A8240E6F9C21F1A42EDB9059DE63E78B|/\n<br>ed2k://|file|【jinricp】20240324-002.mp4|12152358768|4209FD161DD08A0B170694B50A675DEB|/\n<br>ed2k://|file|【jinricp】20240324-003.mp4|5819669765|3E7AB2EF9255C50A368D409E29611280|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月22日【jinricp】韩国BJ脱衣热舞直播秀！黄金争夺战分组骚舞PK9小时合集【32GB/3V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240322-001.mp4|11296687800|461C447C8D421C9D3184EE37B3C166F3|/\n<br>ed2k://|file|【jinricp】20240322-002.mp4|11601463991|26A04A585682B4698C1FBB7FAEDA4283|/\n<br>ed2k://|file|【jinricp】20240322-003.mp4|11642140616|72A2AEBA1F5F95B98E5F2E23724FD061|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月20日【jinricp】韩国BJ脱衣热舞直播秀！轮盘赌骚舞PK9小时合集【31GB/3V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240320-001.mp4|11301276704|B48DF8D7A3D2720A11E801008581D66C|/\n<br>ed2k://|file|【jinricp】20240320-002.mp4|11205951281|30EE070EDE053F53E9DED1C771A0B432|/\n<br>ed2k://|file|【jinricp】20240320-003.mp4|11463323601|23FE5DA5B0787072C96A20DF6E78C5FB|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月18日【jinricp】韩国BJ脱衣热舞直播秀！骚舞PK10小时合集【35GB/4V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240318-001.mp4|11251068501|95004A0DC0DAFB976BE9E90C2DA35A18|/\n<br>ed2k://|file|【jinricp】20240318-002.mp4|11490997256|9FE66C1B29BCD4B0D54E4619D73664CC|/\n<br>ed2k://|file|【jinricp】20240318-003.mp4|11104085388|335DC9AEA425278D65D0B27264D09035|/\n<br>ed2k://|file|【jinricp】20240318-004.mp4|3793668853|C44FBD07934766B043269C7348E40A48|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月15日【jinricp】韩国BJ脱衣热舞直播秀！密室逃脱&amp;骰子战争11小时合集</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240315-001.mp4|11195383183|906A46D81C6116D6BACDA1D000DD35B6|/\n<br>ed2k://|file|【jinricp】20240315-002.mp4|11182413973|AC6F77BF91A955E0840D36FC4FA77455|/\n<br>ed2k://|file|【jinricp】20240315-003.mp4|11096854805|74D033BE21A6335075054A3D4A3F8EE7|/\n<br>ed2k://|file|【jinricp】20240315-004.mp4|6361820313|6C94E6D422A7BD74107973919AC5E996|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月13日【jinricp】韩国BJ脱衣热舞直播秀！1V1骚舞PK10小时合集【34GB/4V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240313-001.mp4|11088837687|DE87C1C56C6E122D1C114D4EDB96B170|/\n<br>ed2k://|file|【jinricp】20240313-002.mp4|11122646139|73FEEA0E73C97D6E2F6C2620616D3495|/\n<br>ed2k://|file|【jinricp】20240313-003.mp4|11106437872|61645B65025A42E156F29285C068240A|/\n<br>ed2k://|file|【jinricp】20240313-004.mp4|3331651871|21F38DC945C71F130E985DA7875B32C8|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月11日【jinricp】韩国BJ脱衣热舞直播秀！骚舞团战9小时合集【32GB/3V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240311-001.mp4|12720698067|8880CB6C3664BB6E3DB5FF441C44470F|/\n<br>ed2k://|file|【jinricp】20240311-002.mp4|11259577342|28ACCC577CFCDC7383F33F1E6472AA2A|/\n<br>ed2k://|file|【jinricp】20240311-003.mp4|10975334411|54531BE32CC88DFDD7FD013A9F3C8AF3|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月8日【jinricp】韩国BJ脱衣热舞直播秀！妇女节不放假！骚舞PK12小时合集【41GB/4V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240308-001.mp4|11293906087|9A7A3733F761FF9EA6716993146CBD74|/\n<br>ed2k://|file|【jinricp】20240308-002.mp4|11268389626|31F38326EF20C497DC470D1798EDF7F1|/\n<br>ed2k://|file|【jinricp】20240308-003.mp4|10094074822|3D47A18FDDE1A0A51C8A92A047C5B85E|/\n<br>ed2k://|file|【jinricp】20240308-004.mp4|11690549456|25FB47D8536B912B56B6AB809593CFB3|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月6日【jinricp】韩国BJ脱衣热舞直播秀！分组骚舞PK专场10小时（含VIP付费房）合集【35GB/4V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240306-001.mp4|11326384154|4EF1BFB9F1F1D325957C154F515B234D|/\n<br>ed2k://|file|【jinricp】20240306-002.mp4|11311075061|A57FA4F10A05A4B543E28036B85729F4|/\n<br>ed2k://|file|【jinricp】20240306-003.mp4|13397922721|AF74AAA45084D91A247F1D771C3DFB9C|/\n<br>ed2k://|file|【jinricp】20240306-VIP.mp4|1540257906|F57050A78BC95466D92B943C4324762E|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>3月4日【jinricp】韩国BJ脱衣热舞直播秀！制服诱惑专场12小时合集【40GB/4V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240304-001.mp4|11033894482|090D975613A4AA72C97303ACDECEED86|/\n<br>ed2k://|file|【jinricp】20240304-002.mp4|10963396123|37E885875DAEB19A59D4FB8BF96987DB|/\n<br>ed2k://|file|【jinricp】20240304-003.mp4|11231929638|A3C0B8EF3D3BCAF467321B9F53A9AFC6|/\n<br>ed2k://|file|【jinricp】20240304-004.mp4|10418661454|A21FD9BB33B4641DFF43D52231D45AEA|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>2月28日【jinricp】韩国BJ脱衣热舞直播秀！情趣诱惑专场10小时（含VIP付费房）合集【33GB/4V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|【jinricp】20240228-001.mp4|11262036011|EF841C43ECCB160BDF535A20A0D6A6E8|/\n<br>ed2k://|file|【jinricp】20240228-002.mp4|11313257771|F53036470D1994084DE8FC5DA0935C25|/\n<br>ed2k://|file|【jinricp】20240228-003.mp4|11049791125|2908DBB3AF0E8F835C8EB3027F8E0AA5|/\n<br>ed2k://|file|【jinricp】20240228-VIP.mp4|2038409357|1291B85D421DF8F2C91216EF6BDD18D8|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>2月26~27日【jinricp】新鲜录制！韩国BJ女团脱衣热舞秀！韩服透视装专场14小时合集【48GB/5V】</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|20240226-001.mp4|5234043525|808F2B07BB890990B7AEFD773C2178EC|/\n<br>ed2k://|file|20240226-002.mp4|11210303919|6CC1B8469797A17AC35DD64A3675D30C|/\n<br>ed2k://|file|20240226-003.mp4|11933424104|FD45340D27410380AB6D7D613CC68BF3|/\n<br>ed2k://|file|20240226-004.mp4|11278374344|53271455933FD04712CF05FACF2BB461|/\n<br>ed2k://|file|20240226-005.mp4|12188452566|3D132866DC62E91469CA6CD7D5D5A477|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>2.23 10部33G</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|20240223_144112.mp4|4823310476|BF4804C0D05F867781D9DDA29649949B|/\n<br>ed2k://|file|20240223_152609.mp4|3731182273|335C36B84591C9DB72E3E71E030850D0|/\n<br>ed2k://|file|20240223_162610.mp4|3680553676|E73038FA63F7DDF848B4CCCB8B932588|/\n<br>ed2k://|file|20240223_172610.mp4|3680533185|061DB9FE150F02F210B8479A3AD95239|/\n<br>ed2k://|file|20240223_182610.mp4|3679428658|E772C1B6FB94BF9E767E7BF4015D10EF|/\n<br>ed2k://|file|20240223_192610.mp4|3668474073|F1AE32425B2C3921E29676FFA4286EAC|/\n<br>ed2k://|file|20240223_202610.mp4|3021767677|824A776B76C03C1C214C7CC2EE37E0D7|/\n<br>ed2k://|file|20240223_211612.mp4|3695846372|600C6AAC777CBCF32544A10ABE282F54|/\n<br>ed2k://|file|20240223_221612.mp4|3680031438|C03E4121ECB4BACF1D1F9C237195E067|/\n<br>ed2k://|file|20240223_231612.mp4|1625349207|7191BEEFAE75D795C1BA8A56A1E6C3EA|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>2.21 10部30G</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|20240221_141343.mp4|2030013420|B8E7700FD25E23747F9C42348A24C43E|/\n<br>ed2k://|file|20240221_144616.mp4|956824248|BE731C57AFD47A8C4F940C15B4CA6451|/\n<br>ed2k://|file|20240221_150155.mp4|3730945473|6AE8CCC796C6FAAEC6A897F28616ED9C|/\n<br>ed2k://|file|20240221_160156.mp4|3680621021|02057EC705520B6586BD5891E126ECAB|/\n<br>ed2k://|file|20240221_170156.mp4|3678081917|4D14539291454E3AB78EE2F33EEA83DD|/\n<br>ed2k://|file|20240221_180156.mp4|3667719495|4DE3EC63F2B898BF74C3CDDD5361A29A|/\n<br>ed2k://|file|20240221_190156.mp4|3678910904|587A6CB14A60C0EED68B917CE803CDF3|/\n<br>ed2k://|file|20240221_200156.mp4|3676291362|AFC80FE88C9DA20BFBCECBC7C1D3464B|/\n<br>ed2k://|file|20240221_210156.mp4|3680623512|261B83488B1EEC28757AA38BF272A767|/\n<br>ed2k://|file|20240221_220156.mp4|3508772754|EB2937AD06AFA55EFBB5F3499B9D1ABC|/</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>2.19 10部43G</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ed2k://|file|20240219 (1).mp4|2030421756|9658D77869F0629A387C758763DA22EF|/\n<br>ed2k://|file|20240219 (2).mp4|2030656514|D6C73BB717F0FE1FBFEE30D6512E6E61|/\n<br>ed2k://|file|20240219 (3).mp4|2030558724|83CE6D5B6BD5F598D629A9ADF38C1C8B|/\n<br>ed2k://|file|20240219 (4).mp4|592959885|EBBF5D1EC7470E76A6BB10BA0253CB93|/\n<br>ed2k://|file|20240219_10小时超长直播BJ-VIP.mp4|2052176706|0C09D213FAF422C0A5C098FFFFC1515F|/\n<br>ed2k://|file|20240219_140104.ts|306172476|EE4168BF37C76885A0C05A7947B170FF|/\n<br>ed2k://|file|20240219_140801.ts|15562829880|EAC1799494A641B36A0479793CFFCBF4|/\n<br>ed2k://|file|20240219_181703.ts|2209995460|2D868D3E5471E448D355DCB6E7CD3808|/\n<br>ed2k://|file|20240219_185334.ts|12574769724|A43FC7809D0C7ED83865011BC8E39675|/\n<br>ed2k://|file|20240219_221621.ts|7250345396|081ACC4A437B0F9BEA3CDC172A945808|/</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u8M4pmjito",
+          "_anchor": "article07-1i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "article11",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article11\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n       <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">        \n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\">\n    </div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-0 mb-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>韩国BJ | 韩国女主播 | pandatv | 진리컴퍼니 | jinricp | jinri company</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mt-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\"><a href=\"https://github.com/niucnet/jinri-cp\" class=\"text-primary\" target=\"_blank\">https://github.com/niucnet/jinri-cp</a></h4>\n                <div class=\"mbr-section-btn align-center mt-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Learn more\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "u8M7acM3vH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "article11-1j"
+        }
+      ]
+    }
+  }
+}
